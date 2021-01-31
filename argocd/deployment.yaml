@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-static-app
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: sample-static-app
+  template:
+    metadata:
+      labels:
+        app: sample-static-app
+    spec:
+      containers:
+      - image: vmercierlab/sample-static-app:latest
+        name: sample-static-app
+        ports:
+          - containerPort: 80
