@@ -2,7 +2,7 @@
 
 This is simple static application for lab purpose.
 
-vmercierlab/sample-static-app Docker image will be automatically updated.
+[vmercierlab/sample-static-app Docker image](https://hub.docker.com/r/vmercierlab/sample-static-app) will be automatically updated.
 
 ## Create new release
 
